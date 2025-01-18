@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "tutorial",
+	"version": "${version}",
+	"name": "Tutorial",
+	"description": "This is a practice mod by Gavin Williams following kaupenjoe's tutorial.",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/LightningFish27/MC-Practice-Mod1.21.X"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/tutorial/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.lightningfish27.tutorial.Tutorial"
+		],
+		"fabric-datagen": [
+			"net.lightningfish27.tutorial.TutorialDataGenerator"
+		],
+		"client": [
+			"net.lightningfish27.tutorial.TutorialClient"
+		]
+	},
+	"mixins": [
+		"tutorial.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

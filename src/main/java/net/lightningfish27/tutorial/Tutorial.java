@@ -14,8 +14,7 @@ public class Tutorial implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		ModItemGroups.registerItemGroups();
-
+		ModItemGroups.registerItemGroups(); // create new creative tabs for the items added by this mod
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 
